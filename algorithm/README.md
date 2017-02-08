@@ -4,7 +4,7 @@
 
 You must set `\usepackage[options]{algorithm2e}` before `\begin{document}` command.
 
-The optional arguments [Hhtbp] works like those of figure environment. The `H` argument forces the algorithm to stay in place. If used, an algorithm is no more a floating object.
+The optional arguments [Hhtbp] works like those of figure environment. The **H** argument forces the algorithm to stay in place. If used, an algorithm is no more a floating object.
 
 Here is a quick example:
 ```

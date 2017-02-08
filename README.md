@@ -1,1 +1,1 @@
-# lateX
+# LaTeX

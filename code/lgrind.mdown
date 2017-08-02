@@ -1,0 +1,20 @@
+A program called "lgrind" is available in the newtex locker to help you convert program listings to a form easily includable in a LaTeX document. To use this program, type the following at your athena% prompt:
+```
+athena%  add newtex
+athena%  lgrind -i -llanguage filename > filename.tex
+```
+This will generate a file (filename.tex) of code (-llanguage) formatted for inclusion in a LaTeX file (-latex). For example, to format a C program called mycode.c:
+```
+athena%  lgrind -i -lc mycode.c > mycode.c.tex
+```
+To include the encoded file in your document:
+1. Include a line in your document preamble:
+   ```
+   \usepackage[noindent]{lgrind}
+   ```
+2. Place the lines
+   ```
+   \begin{lgrind}
+   \input mycode.tex
+   \end{lgrind}
+   ```

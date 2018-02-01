@@ -1,5 +1,5 @@
-# set terminal canvas  solid butt size 600,400 fsize 10 lw 1 fontscale 1 name "histograms_2" jsdir "."
-# set output 'histograms.2.js'
+# set terminal pngcairo  transparent enhanced font "arial,10" fontscale 1.0 size 500, 350 
+# set output 'histograms.2.png'
 set boxwidth 0.9 absolute
 set style fill   solid 1.00 border lt -1
 set key inside right top vertical Right noreverse noenhanced autotitles nobox

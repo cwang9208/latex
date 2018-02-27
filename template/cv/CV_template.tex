@@ -1,0 +1,188 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+%
+% If you have never used LaTeX before, talk you your advisor about
+% how to compile this into a PDF.
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{hyperref}
+\usepackage[hmargin=1.5cm,vmargin=1.5cm]{geometry}
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Jane T. Student}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {CV, physics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.0in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+  \href{http://www.wm.edu/}{College of William and Mary} \\
+  Department of Physics \\
+  P.O. Box 8795 \\
+  Williamsburg, VA 23187
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Phone: & (757) 555-5555 \\
+    Fax: &  (757) 221-3540 \\
+    Email: & \href{mailto:me@email.wm.edu}{\tt me@email.wm.edu} \\
+  \end{tabular}
+\end{minipage}
+
+\section*{Education}
+
+\begin{itemize}
+  \item B.A. Physics, University of somewhere else, 2005.
+
+  \item M.S. Physics, College of William and Mary, 2007.
+
+  \item Ph.D. Physics, College of William and Mary, expected 2010.
+\end{itemize}
+
+%\clearpage
+
+\section*{Research Experience}
+\begin{itemize}
+\item Avoiding the roaches in Small Hall
+ \begin{itemize}
+  \item \textbf{Physics Analyses:} 
+    \begin{itemize}
+     \item - Your experience goes here. Maybe a citation to your publications [1].    
+     \end{itemize}
+
+  \item \textbf{Simulations:}
+    \begin{itemize}
+      \item - Fantasy Football mock drafts.
+      \item - More experience goes here.
+    \end{itemize}
+
+  \item \textbf{Hardware:}
+    \begin{itemize}
+     \item - Proper preparation of coffee.
+     \item - More experience goes here.
+    \end{itemize}
+ 
+\end{itemize}
+\end{itemize}
+
+
+\section*{Awards \& Grants}
+\begin{itemize}
+  \item Rolf Winter Physics Teaching Assistant Award, 2007, 2008, 2009, 2010. 
+  \item VSGC Graduate Research Fellowship, 2009-2010.
+  \item Token travel grant from W\&M's grad dean. 
+\end{itemize}
+
+\section*{Teaching Experience}
+\begin{itemize}
+  \item \textbf{Teaching Assistant.} Introductory Physics Recitation, Summer 2007. 
+  \item \textbf{Teaching Assistant.} Astronomy Laboratory, Fall Semester 2005 - Spring Semester 2007.
+\end{itemize}
+
+\section*{Professional Service}
+\begin{itemize}
+ \item \textbf{Graduate Representative}, Physics Graduate Studies Committee, W\&M, 2009-2010.
+ \item \textbf{President}, Physics Graduate Student Association, W\&M, 2002-2003.
+\end{itemize}
+
+\section*{Professional Development}
+\begin{itemize}
+ \item \textbf{Generic Physics Summer School}, Fermilab, Summer 2002.
+\end{itemize}
+
+
+\section*{Publications}
+\subsection*{Papers}
+\begin{enumerate}
+\item  Me \textit{et al.} Paper about my research that is really important and recent. Phys. Rev. Lett. 2010.
+\item Me \textit{et al.} Paper about my research that is really important and a little older. Phys. Rev. Lett. 2009.
+\item Me \textit{et al.} Paper about someone else's research where I am somehow an author. Phys. Rev. Lett. 2008.
+\end{enumerate}
+\subsection*{Talks and Posters}
+
+\begin{itemize}
+\item \textit{``Let's talk about my research''} Talk. APS April Meeting, Washington D.C., February 2010.
+\item \textit{``Let's talk about science funding,''} Talk. Graduate Research Symposium, Williamsburg VA, March 2010.
+\item \textit{``My parent's don't know what I do for a living,''} Poster. Graduate Student Research Forum, Virginia State Library, Richmond VA, February 2009.
+\end{itemize}
+
+\bigskip
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}

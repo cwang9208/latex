@@ -1,0 +1,766 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                             Curriculum Vitae                               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[10pt,a4]{article}
+\topmargin-2.0cm
+\advance\oddsidemargin-1.2cm
+\advance\evensidemargin-1.2cm
+\textheight9.22in
+\textwidth6.4in
+\newcommand\bb[1]{\mbox{\em #1}}
+%\def\baselinestretch{1.25}
+\def\baselinestretch{1.0}
+
+\usepackage{multicol}
+% The use of the times package forces the use of the type-1 times
+% roman font, but the times roman font does not look nice.
+% Besides the times roman font still does not print correctly on
+% the dopy printer.
+%\usepackage{times}
+
+\usepackage{fancyhdr}
+\usepackage{origpagecounting}
+\usepackage[dvips]{color}
+
+\newcounter{myEnumCounter}
+\newcounter{mySaveCounter}
+\renewenvironment{enumerate}{%
+  \begin{list}{\arabic{myEnumCounter}.}{\usecounter{myEnumCounter}%
+  \setcounter{myEnumCounter}{\value{mySaveCounter}}}
+  }{%
+  \setcounter{mySaveCounter}{\value{myEnumCounter}}\end{list}%
+}
+\newcommand\myEnumReset{\setcounter{mySaveCounter}{0}}
+
+% The old enumerate environment is rewritten, so you need no special command to
+% start continuing counting. With the command \myEnumReset you can Reset the couter
+% at any place in the text.
+
+% http://www.educat.hu-berlin.de/~voss/lyx/list/enum.phtml
+
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+
+\begin{document}
+
+%\thispagestyle{empty}
+%\pagestyle{plain}
+
+\thispagestyle{fancy}
+%\pagenumbering{gobble}
+%\fancyhead[location]{text}
+% Leave Left and Right Header empty.
+\lhead{\textcolor{gray}{\it Sundar Iyer}}
+%\rhead{\textcolor{gray}{\thepage/\totalpages{}}}
+%\rhead{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize \textcolor{gray}{}}
+%A copy of this curriculum vitae, publications and 
+%talk slides are available for download at
+%http://www.stanford.edu/$\sim$sundaes/application}}
+
+
+%\pagestyle{myheadings}
+%\markboth{Sundar Iyer}{Sundar Iyer}
+
+\vspace*{0.4cm}
+\begin{center}
+{\huge \bf SUNDAR IYER}
+\vspace*{0.25cm}
+\end{center}
+
+\begin{small}
+
+%===================================
+\begin{tabbing}
+\=xxxxxxxx\=xxxxxxxx\=xxxxxxxx\=\kill
+\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+
+724 Bryant St. & Phone: (650) 575-9659 \\
+Palo Alto, CA-94301 &  Email: sundar@nemo-systems.com\\
+http://www.stanford.edu/$\sim$sundaes & Alt: sundaes@cs.stanford.edu \\
+\end{tabular*}
+\end{tabbing}
+
+\vspace*{0.2cm}
+
+
+%==========================================
+%\vspace{0.20cm}
+
+\subsection*{PARTICULARS}
+
+%{\color{DarkSeaGreen}} \hrule
+\hrule
+\vspace{0.2cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection*{EDUCATION}
+%\vspace{0.2cm}
+
+%\begin{tabbing}
+%xxxxxxxx\=xxxxxxxx\=xxxxxxxx\=xxxxxxxx\=\kill
+%\>{\bf Academic record}\\[.7em]
+
+%\>\begin{tabular}{|l|l|l|}
+%\hline
+%Certificate	&	Place of study	&	Year\\
+%\hline
+%Ph. D. in Computer Sc.  & Stanford University     & {\it 2000-, Defended 2003} \\
+%\hline
+%M. S. in Computer Sc. & Stanford University     & {\it June 2000} \\
+%\hline
+%B. Tech in Computer Sc. and Engg. & I.I.T. Bombay  &	{\it April 1998} \\
+%\hline
+%\end{tabular}
+%\end{tabbing}
+
+%xxxx\=xxxxxxxx\=xxxxxxxx\=xxxxxxxx\=\kill
+
+\begin{tabbing}
+xxxx\=xxxxxxxx\=xxxxxxxx\=xxxxxxxx\=\kill
+%\>\begin{tabular*}{6.1in}{lr}
+
+\>\begin{tabular*}{0.9\linewidth}{l@{\extracolsep{\fill}}r}
+Stanford University & Stanford, CA \\
+Ph. D. in Computer Science  &  {\it 2000-, Defended 2003}\\
+ & \\
+
+Stanford University & Stanford, CA \\
+M. S. in Computer Science & {\it June 2000}\\
+{\it Distinction in Research} & \\
+ & \\
+
+Indian Institute of Technology (I. I. T.), Bombay & Mumbai, India \\
+B. Tech. in Computer Science and Engineering & {\it April 1998}
+\end{tabular*}
+\end{tabbing}
+
+\subsubsection*{CURRENT STATUS}
+\begin{list}{}{}
+\item U.S. Permanent Resident, Citizen of India.
+\end{list}
+
+\subsubsection*{RESEARCH INTERESTS}
+%\hrule
+%\vspace{0.2cm}
+
+\begin{list}{}{}
+\item My research interests span the areas of network algorithms, system architecture
+and component design. I have a specific interest in algorithms for packet processing,
+switching, router design, memory architectures and scalable load balancing systems.
+\end{list}
+
+\subsubsection*{DISSERTATION}
+
+\begin{list}{}{}
+\item Title: ``Parallelism and load-balancing for the Internet"  \\
+Advisor: Prof. Nick McKeown
+\end{list}
+
+My thesis develops an analytical framework for the design of networking systems
+(specifically memory intensive aspects of Router Architecture, Packet Processing and Switching Algorithms) which give performance guarantees via the use of load balancing algorithms and parallelism in design. 
+
+%\vspace{0.1cm}
+\subsection*{ACADEMIC HONORS}
+\hrule
+\vspace{0.2cm}
+\begin{itemize}
+%==================
+
+	\item Cisco Stanford FMA Fellowship, Stanford University, 2002-2003.
+
+	\item Siebel Scholars Fellowship, Stanford University, 2001.
+
+        \item  Paper chosen amongst the best papers from IEEE Hot Interconnects 2001 and
+selected for publication to IEEE Micro.
+
+	\item Christofer Stephenson Memorial Award for the 
+    best Masters Thesis in Computer Science, Stanford University, 2000.
+
+	\item Indian National Talent Search Merit Scholarship, 1992-1998.
+
+	\item Indian National Talent Search Examination in Physics (NSEP) awardee, 1993.
+
+	\item  Selected to participate in the Indian National Maths Olympiad, 1993.
+
+    \item Indian National Merit Scholarship, 1992-1998.
+
+\end{itemize}
+
+\newpage
+\pagestyle{fancy}
+\lhead{\textcolor{gray}{\it Sundar Iyer}}
+%\rhead{\textcolor{gray}{\thepage/\totalpages{}}}
+\fancyfoot[C]{}
+
+%\vspace{0.1cm}
+\subsection*{WORK EXPERIENCE}
+\hrule
+\vspace{0.2cm}
+\begin{itemize}
+\item {\bf CTO, Co-Founder and Member of the Board, Nemo Systems,} Nov
+2003 - Sep 2005. Nemo Systems (acquired by Cisco Systems in Sep 2005) 
+was a fabless semiconductor company, building caching memory sub-systems 
+for networking applications. 
+
+\item {\bf Consultant, Nevis Networks Inc.}, Sep. 2003 - Mar 2004.
+Analyzed the performance of the Nevis switch fabric. Suggested
+theoretically optimal and practical packet switching algorithms for the
+distributed shared memory switch fabric.
+
+\item {\bf Systems Engineer, PMC-Sierra,} Sep. 2000 - Oct. 2001.
+
+\item {\bf Senior Systems Architect, SwitchOn Networks,} Jan. 1999 - Sep. 2000.
+Part of the initial team of six members of SwitchOn Networks (later acquired by PMC-Sierra in Sep. 2000) during
+its founding. Jointly responsible for the design, architecture, and algorithm evaluation of the ClassiPI chip set.
+ClassiPI was a networking content co-processor which was released commercially in Feb. 2001. Other joint
+responsibilities included technical marketing and patent strategy.
+
+\item {\bf Consultant, RIMO Technologies, India}, Jun. 1998 - Dec. 1998. \\
+
+%  Other joint responsibilities included technical marketing, patent strategy,
+%  business development and sales. Was one of the first six founding members, of 
+%  SwitchOn Networks (now acquired by PMC-Sierra) and was involved in this startup 
+%  from the initial concept and venture capital stage to the successful acquisition and
+%  commercial release of the ClassiPI chipset in Feb. 2001.
+
+\end{itemize}
+
+%\vspace{0.1cm}
+\subsection*{RESEARCH EXPERIENCE}
+\hrule
+\vspace{0.2cm}
+\begin{itemize}
+\item {\bf Research Assistant, Stanford University}, Sep 1998 - Present. \\
+{\bf Parallel Packet Switches}, (Sep 1998 - June 2000): We ask the question as to whether it is possible to build a large switch
+from multiple smaller switches stacked in parallel, called the parallel packet switch (PPS), 
+such that it behaves exactly like a large switch. I designed an algorithm and derived the
+first analytical proof of the conditions under which this is possible. I then extended 
+this work so that the PPS can support quality of service and multicast traffic. Later, I derived
+and analyzed a practical distributed algorithm for the PPS. This research demonstrates how switching capacity can be scaled in an efficient
+manner.
+
+\vspace{0.1cm}
+{\bf Distributed Shared Memory Routers}, (Jan 2001 - Mar 2002): From a network designer's
+perspective a shared memory router is ideal in that the packets
+are stored in a central location and the memory bandwidth and space is shared across
+packets from all ports. This sharing helps in conserving memory space and results in low cost
+and low power routers. However, it is a widely held myth that such shared memory routers are not
+scalable to higher speeds due to limitations imposed on the speed of a single memory. I worked 
+on the first demonstration and proof to show how to build and scale the capacity of 
+shared memory routers using distributed memories.  
+
+\vspace{0.1cm}
+{\bf The Pigeon Hole Principle for Routers}, (Sep 1998 - Mar 2002): In the course of our
+work on routers we derived a technique called ``Constraint Sets". This was used to
+analyze a number of router architectures especially those with a single stage of
+buffering. The ``Constraint Set" technique is a generalization of the
+Pigeon Hole principle. Later, I extended this work to Combined Input Output Queued
+routers, which are routers with two stages of buffering.
+
+\vspace{0.1cm}
+{\bf Scalable, High Performance Packet Buffers}, (Sep 2000 - Mar 2002): Packet buffers on
+Internet Routers have two requirements. They need to be large and have to be accessed at a very high rate. Unfortunately commodity memories such as
+DRAMs have slow access speeds though they allow large storage, while commodity SRAMs allow fast
+access but are inefficient in storage. I analyzed a well-known hierarchical buffer architecture
+that has a small amount of SRAM cache combined with DRAM. However, unlike computer architecture
+where caching only allows statistical guarantees, the algorithms proposed exploit the
+characteristics of memory requirements for networking
+to enable the design of a memory architecture which gives deterministic latency
+guarantees. I showed how the optimal algorithm can be modeled using difference equations and used adversarial 
+traffic patterns to derive bounds on the minimum size of the SRAM memory.
+This resulting memory architecture supports
+the access speeds of SRAM and has the storage capacity of DRAM. 
+
+
+\vspace{0.1cm}
+{\bf Deterministic Architectures for Statistics and State Maintenance}, (Sep 2000 - Mar 2002): A number
+of packet processing tasks in the Internet put a large demand on the costs and the power budget for designers. We specifically evaluate two such
+tasks; namely maintaining statistics counters and maintaining state of connections. We
+propose architectural solutions and derive optimal algorithms. Our analytical results are based on the 
+use of potential functions to model the system. This research shows how the above packet processing 
+tasks can be scaled to very high line rates.
+
+\vspace{0.1cm}
+{\bf Distributed Algorithms for Buffered Crossbars}, (June 2002 - Present):  Internet core routers have been designed lately using a crossbar switching fabric. 
+While it is possible to build routers using crossbars which give deterministic performance
+guarantees, the algorithms required to realize this are centralized and have high
+computational complexity. Hence in practice most routers do not
+use these algorithms and do not give any guaranteed performance.
+A colleague of mine, Shang-Tse Chuang,  and I analyzed a slight modification to the
+crossbar fabric called the buffered crossbar, which is simply a crossbar with a small number of buffers in it. 
+We derive a bijection between a crossbar and a buffered crossbar to show that any
+algorithm on the buffered crossbar can be implemented on the crossbar and vice versa. We
+derive a suite of distributed algorithms on the buffered crossbar and derive
+analytically the conditions under which they can give both statistical and deterministic
+guarantees for both first come first serve routers and routers which support quality of
+service. Since these distributed algorithms can operate independently on each input and
+output port of the switch without communicating with each other, they are readily implementable.
+Our results show that Internet routers built using crossbars can be re-designed in a
+practical manner using buffered crossbars and give superior performance and
+deterministic guarantees.
+
+\vspace{0.1cm}
+{\bf Stability Properties of the Maximum Size Matching}, (May 2002 - Present):
+Contrary to intuition, it is known in queueing theory that a greedy policy that
+maximizes the instantaneous throughput in a system of queues may not maximize the long term throughput. 
+However, greedy policies are of interest because they are usually easy to implement.
+A maximum size matching is an example of such a greedy scheduling policy on crossbar
+switches. I analyzed this greedy policy and showed that with 
+stochastically constrained traffic and the framework of scheduling packets in batches,
+the greedy policy maximizes the long term throughput. A number of open
+problems remain in this area and at the time of writing, this work is in progress.
+
+\item {\bf Research Intern, ATL SprintLabs}, June - Sep. 2001. \\
+{\bf Internet Measurements \& Deflection Routing:} Our work involved designing a practical solution for tackling link overload on the network
+backbone. First, I analyzed how overload occurs on the Sprint backbone. 
+This involved writing a tool to characterize link overload and create
+statistics from SNMP measurements collected for a period of a year from the
+Sprint backbone. With the intuition gained from these statistics we concluded that there
+was a need to alleviate overload using deflection routing.
+I suggested a method of setting link weights on the Sprint network (taking advantage of
+the topology characteristics) to enable a loop free deflection routing algorithm.
+
+\item {\bf Research Intern, RIMO Technologies, India}, May - July 1997. \\
+{\bf Packet Classification Algorithms:} Designed classification algorithms and developed a commercial software packet classifier for Windows NT and the VXL Terminal Server embedded system platform.
+
+\item {\bf Undergraduate Research Intern, I. I. T. Bombay}, Apr - July 1996. \\
+{\bf Java Application Software:} Developed algorithms and software for Java applications for distributed computing, under Prof. Sharat Chandran.
+
+\end{itemize}
+
+
+
+%\vspace{0.1cm}
+\subsection*{TEACHING EXPERIENCE}
+\hrule
+\vspace{0.2cm}
+
+\begin{itemize}
+
+\item {\bf Teaching Assistant.} EE384X: Packet Switching Architectures-I, Prof. Balaji
+Prabhakar and Prof. Nick McKeown, Winter 2002, Stanford University.
+
+\item {\bf Teaching Assistant.} EE384Y: Packet Switching Architectures-II, Prof. Balaji
+Prabhakar and Prof. Nick McKeown,
+Spring 2001 and Spring 2002, Stanford University.
+
+\item {\bf Instructor.} Networking, Center for Development of Advanced Computing (CDAC) at MET Mumbai, Winter 1997,
+Bombay, India (jointly with Prof. A. Karandikar, I. I. T. Bombay).
+
+\end{itemize}
+
+
+% List of papers and publications and patents ?
+%===========================================
+%\vspace{0.1cm}
+\subsection*{PUBLICATIONS}
+\hrule
+\vspace{0.2cm}
+
+\subsubsection*{PAPERS}
+
+\begin{enumerate}
+    \item 
+Sundar Iyer, Nick McKeown,
+``Analysis of the Parallel Packet Switch Architecture",
+to appear in {\it IEEE/ACM Transactions on Networking}, Apr. 2003.
+
+    \item 
+Sundar Iyer, Nick McKeown,
+``Using Constraint Sets to Achieve Delay Bounds in CIOQ Switches", 
+to appear in {\it IEEE Communication Letters}, 2003.
+
+    \item 
+Sundar Iyer, Supratik Bhattacharrya, Nina Taft, Christophe Diot,
+``An Approach to Alleviate Link Overload as Observed on an IP Backbone". To appear in
+{\it proceedings of IEEE INFOCOM}, San Francisco, March 2003. A more detailed
+version of this paper appears in two technical reports as, ``An Approach to
+Alleviate Link Overload as Observed on an IP Backbone ", {\it Sprint ATL
+TR02-ATL-071127}, July 2002 and ``A Measurement Based Study of Load Balancing on an IP Backbone", {\it Sprint ATL TR02-ATL-051027}, May 2002.
+
+
+    \item 
+Sundar Iyer, Rui Zhang, Nick McKeown,
+``Routers with a Single Stage of Buffering", 
+{\it Proceedings of ACM SIGCOMM}, Pittsburgh, Pennsylvania, Sep 2002. Also in
+{\it Computer Communication Review}, vol. 32, no. 4, Oct 2002.
+
+
+    \item 
+Sundar Iyer, Nick McKeown,
+``On the Speedup Required for a Multicast Parallel Packet Switch", 
+{\it IEEE Communication Letters}, June 2001, vol. 5, no. 6, pp. 269-271.
+
+    \item 
+Sundar Iyer, Ramana  Rao, Nick McKeown,
+``Analysis of a Memory Architecture for Fast Packet Buffers", 
+{\it IEEE - High Performance Switching and Routing}, Dallas, May 2001, pp.
+368-373. A more detailed version of this work was presented in the {\it IEEE GBN
+Workshop}, Alaska, April 2001.
+
+    \item 
+Sundar Iyer, Nick McKeown,
+``Making Parallel Packet Switches Practical", 
+{\it Proceedings of IEEE INFOCOM}, Alaska, April 2001, vol. 3, pp. 1680-87.
+
+
+    \item 
+Sundar Iyer, Ramana Rao Kompella, Ajit Shelat,
+``ClassiPI: An Architecture for Fast and Flexible Packet Classification", 
+{\it IEEE NETWORK, Special Issue on Fast IP Packet Forwarding and Classification
+for Next Generation Internet Services}, Mar-Apr. 2001. 
+
+    \item 
+Sundar Iyer, Ajay Desai, Ajay Tambe, Ajit Shelat, 
+``ClassiPI: A Classifier for Next Generation Policy Based Engines", 
+{\it IEEE Hot Chips}, Stanford University, Aug 2000.
+
+    \item Sundar Iyer, Amr. A. Awadallah, Nick McKeown,
+``Analysis of a Packet Switch with Memories Running Slower than the Line Rate", 
+{\it Proceedings of IEEE INFOCOM}, Tel Aviv, March 2000, pp.529-537.
+
+    \item 
+``Practical Algorithms for Performance Guarantees in Buffered Crossbars", with
+Shang-Tse Chuang, Nick McKeown, {\it IEEE INFOCOM 2005}.
+\end{enumerate}
+
+\subsubsection*{INVITED PAPERS}
+\begin{enumerate}
+
+    \item 
+Sundar Iyer, Nick McKeown,
+``Maximum Size Matchings and Input Queued Switches", 
+{\it Proceedings of the 40th Annual Allerton Conference on Communication, Control, and Computing}, Monticello,
+Illinois, Oct 2002.
+
+    \item 
+D. Shah, Sundar Iyer, Balaji Prabhakar, Nick McKeown,
+``Maintaining Statistics Counters in Router Line Cards", {\it IEEE Micro,} Jan-Feb, 2002, pp. 76-81. Also appeared as ``Analysis of a Statistics
+Counter Architecture"  in {\it IEEE Hot Interconnects}, Stanford University, Aug. 2001.
+
+\end{enumerate}
+
+
+\subsubsection*{PAPERS UNDER REVIEW}
+\begin{enumerate}
+
+    \item 
+Sundar Iyer, R. R. Kompella, Nick McKeown,
+``Designing Packet Buffers for Router Line Cards", 
+{\it IEEE/ACM Transactions on Networking}. Presently available as, 
+{\it HPNG Technical Report - TR02-HPNG-031001}, Stanford University, Mar.
+2002.
+\end{enumerate}
+
+
+\subsubsection*{PENDING PAPERS}
+\begin{enumerate}
+
+    \item 
+``Attaining Statistical and Deterministic Switching Guarantees using Buffered
+Crossbars", with Shang-Tse Chuang, Nick McKeown. In preparation for {\it IEEE/ACM Transactions on Networking}.
+
+    \item 
+``Maintaining State in Router Line Cards", with Nick McKeown. In preparation for
+{\it IEEE Communication Letters}.
+\end{enumerate}
+
+\subsubsection*{OTHER REPORTS}
+
+\begin{enumerate}
+\item
+Sundar Iyer, Nick McKeown
+``Techniques for Fast Shared Memory Switches", 
+{\it HPNG Technical Report - TR01-HPNG-081501}, Stanford University, Aug 2001. 
+
+\item
+Sundar Iyer,
+``The Parallel Packet Switch Architecture", 
+{\it Masters Thesis Report}, May 2000, Stanford University.
+\end{enumerate}
+
+% This resets the counter for the enumerate environment.
+\myEnumReset 
+
+%\vspace{0.1cm}
+\subsection*{PATENTS \& APPLICATIONS}
+\hrule
+\vspace{0.2cm}
+
+  These patents were applied for when working in Industry. All patent applications are 
+in processing, except when mentioned otherwise.
+%\footnote {None of the research done at Stanford has been patented, they are all freely
+%available for use in the public domain.} 
+%Among others, our content processing algorithms are in use in Cisco's Content Services Switches.
+
+\begin{enumerate}
+
+    \item {\bf Network Memory}
+
+	\begin{itemize}
+    	\item Multiple patents filed for various algorithms and techniques for
+the design of network memory. Details of these patents are available on request.
+	\end{itemize}
+
+    \item {\bf Network Address Translation}
+
+	\begin{itemize}
+
+    	\item  {\it (granted)} Subhash Bal, Raghunath Iyer, Sundar Iyer, ``Method and
+Apparatus for Performing Internet Network Address Translation", U.S.
+Patent-6457061. Filed Nov. 1998, Issued Sep. 2002.
+
+	\end{itemize}
+
+    \item {\bf Pattern Matching}
+
+	\begin{itemize}
+
+    	\item Sundar Iyer, Ajit Shelat, George Varghese et al.,
+``Fast, Deterministic Exact Match Look-ups In Large Tables". Filed Oct. 2002.
+
+	 \item Sundar Iyer, Ajit Shelat, George Varghese  et al., ``Method and Apparatus
+for Parallel String Searching". Filed May. 2000.
+
+	\end{itemize}
+
+    \item {\bf Route Lookup and Packet Classification}
+
+	\begin{itemize}
+
+    		\item Sundar Iyer, Ajit Shelat et al.,
+``Algorithm and Design for Deterministic Parallel Route Lookups". Filed Jul. 2001.
+
+    		\item Sundar Iyer, Moti Jiandani, Ajit Shelat et al., 
+``Control System for High Speed Rule Processors". Filed Apr. 1999.
+
+    		\item {\it (granted)} Sundar Iyer, Ajit Shelat et al.,``Method and Apparatus
+for High-Speed Network Rule Processing using an Array of Cells - II". U.S. Patent-6510509.
+Filed Mar. 1999, Issued Jan. 2003.
+
+    		\item Sundar Iyer, Moti Jiandani, Ajit Shelat et al., ``Method and Apparatus
+for High-Speed Network Rule Processing- I". Filed Dec. 1998.
+
+	\end{itemize}
+
+    \item {\bf Deflection Routing}
+
+	\begin{itemize}
+
+        \item Sundar Iyer, Supratik Bhattacharrya, Nina Taft, Christophe Diot,
+``A Method to Alleviate Link Overload on an IP Backbone". Filed July 2003.
+	\end{itemize}
+
+
+\end{enumerate}
+
+\myEnumReset 
+
+
+%\vspace{0.1cm}
+\subsection*{TALKS}
+\hrule
+\vspace{0.2cm}
+
+\subsubsection*{CONFERENCE TALKS}
+\begin{enumerate}
+    \item
+       {\it (Pending)} ``An Approach to Alleviate Link Overload as Observed on an IP Backbone",
+       {\it IEEE INFOCOM 2003}, San Francisco, California, Apr. 2003. 
+
+    \item 
+       {\it (Invited)} ``Maximum Size Matchings and Input Queued Switches",
+       {\it 40th Annual Allerton Conference on Communication, Control, and Computing}, Monticello, Illinois, October 2002. 
+
+    \item
+       ``Routers with a Single Stage of Buffering",
+       {\it ACM SIGCOMM}, Pittsburgh, Pennsylvania, Aug 2002. 
+
+    \item 
+       ``Analysis of a Statistics Counter Architecture",
+       {\it IEEE Hot Interconnects}, Stanford, California, Aug. 2001. 
+    \item 
+       ``Analysis of a Memory Architecture for Fast Packet Buffers",
+       {\it IEEE - High Performance Switching and Routing}, Dallas, Texas, May 2001. 
+    \item 
+       ``Making Parallel Packet Switches Practical",
+       {\it IEEE INFOCOM 2001}, Anchorage, Alaska, USA, April 2001.
+    \item 
+       ``Techniques for Fast Packet Buffers",
+       {\it IEEE - GBN Workshop 2001}, Anchorage, Alaska, USA, April 2001.
+    \item 
+       ``ClassiPI: A Classifier for Next Generation Content/Policy Based Switches",
+       {\it IEEE Hotchips}, Stanford, California, August 2000.
+    \item 
+       ``Co-processors and the role of specialized hardware",
+       {\it NETWORLD + INTEROP 2000}, Las Vegas, Nevada, May 2000.
+    \item 
+       ``Analysis of a Packet Switch with memories running slower than the line-rate",
+       {\it IEEE INFOCOM 2000}, Tel Aviv, Israel, March 2000. 
+\end{enumerate}
+
+\subsubsection*{INDUSTRY/OTHER TALKS}
+\begin{enumerate}
+   \item 
+       {\it (various venues)} ``Analysis of the Parallel Packet Switch Architecture", 
+	\begin{itemize}
+   	\item {\it (Invited)} Dept. of Electrical Engineering, I. I. T. Bombay, India - Dec. 2001.
+        \item SwitchOn Networks, Pune, India - Sep. 1999.
+        \end{itemize}
+
+   \item 
+       ``Requirements for a packet classification API", 
+       Network Processor Forum (CPIX), Denver, Colorado - Mar. 2001.
+
+   \item 
+       {\it (various venues)} ``Designing Packet Buffers for Networking",
+	\begin{itemize}
+        \item Rambus Inc., Los Altos, California - Apr. 2001, Sep. 2002.
+        \item Infineon Technologies, San Jose, California  - Apr.  2002, May
+2002.
+        \item Juniper Networks, Sunnyvale, California - Apr. 2001.
+        \item University of California Davis, Davis, California  - Oct 2002.
+        \end{itemize}
+ 
+   \item 
+        ``Some Observations towards Load Balancing over a Network",
+       Sprint ATL Retreat, San Francisco, California, Aug. 2001.
+   \item 
+       ``Shortest Path Routing via Alternate Nearest Neighbor", Sprint ATL 
+       Retreat, Lake Tahoe, California, Mar. 2002.
+
+   \item 
+     ``Analyzing CIOQ Switches using the Constraint Set Technique", Stanford
+University, California, Feb. 2002. 
+
+   \item 
+     ``Practical Algorithms for Performance Guarantees in Buffered Crossbars", Stanford
+Networking Seminar, California, Jan. 2003. 
+
+\end{enumerate}
+
+%\vspace{0.1cm}
+\subsection*{PROFESSIONAL ACTIVITIES}
+\hrule
+\vspace{0.2cm}
+\begin{itemize}
+	\item Technical Program Committee Member, QoS-IP, Milano, Italy, 2003.
+	\item Member Network Processing Forum (Originally CPIX) - 2000-2001.
+\end{itemize}
+
+%\vspace{0.1cm}
+\subsection*{SERVICE}
+\hrule
+\vspace{0.2cm}
+\begin{itemize}
+	\item Reviewer (Journals) - {\it IEEE/ACM Transactions on Networking,
+IEEE Journal on Selected Areas in Communications, IEEE Network, Computer
+Networks, IEEE Communication Letters, Journal of High Speed Networks.}
+	\item Reviewer (Conferences) - {\it IEEE INFOCOM 2000, 2001, 2002, 2003,
+IEEE Hot Interconnects 2001, IEEE Globecom 2000, ACM SIGMETRICS 2003, ISCA 2003,
+HPSR 2003}
+\end{itemize}
+
+% \begin{multicols}{3}[\section*{Long title across all the columns}]
+
+%\vspace{0.1cm}
+\subsection*{LANGUAGES}
+\hrule
+\vspace{0.2cm}
+\begin{list}{}{}
+	\item  Proficient in English, Hindi and Marathi. Working knowledge of Tamil and German.
+\end{list}
+
+%\newpage
+
+\vspace{0.1cm}
+%\begin{multicols}{2} [\subsection*{REFERENCES}]
+
+\subsection*{REFERENCES}
+\hrule
+\vspace{0.2cm}
+
+
+\subsubsection*{FROM ACADEMIA}
+\begin{footnotesize}
+
+\begin{multicols}{2} 
+\noindent 
+Prof. Nick McKeown \\
+Associate Professor \\
+Dept. of Electrical Engg. \& Comp. Sc. \\
+353 Serra Mall, Room 340 \\
+Stanford, CA 94305 \\
+Phone: (650) 725-3641 \\
+nickm@stanford.edu \\
+
+\noindent
+Prof. Balaji Prabhakar\\
+Assistant Professor \\
+Dept. of Electrical Engg. \& Comp. Sc. \\
+350 Serra Mall, Room 269 \\
+Stanford, CA 94305-9510 \\
+Phone: (650) 723-6579 \\
+balaji@stanford.edu \\
+
+\columnbreak
+
+\noindent
+Prof. George Varghese\\
+Professor \\
+Dept. of Comp. Sc. \& Engg., MS 0114 \\
+9500 Gilman Drive, UC San Diego \\
+La Jolla, CA 92040-0114 \\
+Phone: (858) 822-0424 \\
+varghese@cs.ucsd.edu \\
+
+
+\noindent
+Prof. Rajeev Motwani \\
+Professor \\
+Dept. of Computer Science  \\
+353 Serra Mall, Room 474 \\
+Stanford, CA 94305 \\
+Phone: (650) 723-6045 \\
+rajeev@cs.stanford.edu \\
+
+\end{multicols}
+
+\subsubsection*{FROM INDUSTRY}
+\begin{multicols}{2} 
+
+\noindent
+Dr. Flavio Bonomi\\
+Chief Architect \\
+Cisco Systems \\
+170 West Tasman Dr. \\
+San Jose, CA 95134 \\
+Phone: (408) 526-4085 \\
+flavio@cisco.com \\
+
+\columnbreak
+\noindent
+Mr. Ajit Shelat \\
+Chief Technology Officer \\
+SwitchOn Networks (now PMC-Sierra) \\
+5 Mantri Mansion, Vrindavan Society \\
+Pashan, Pune, 411 008, India \\
+Phone: +91-20-589-8412 \\
+ashelat@vsnl.com\\
+
+\end{multicols}
+%\begin{tabbing}
+%xxxx\=xxxxxxxxxxxxxxxxxxxxx\=xxxx\=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\=\kill
+%\>{Nick McKeown}\> :\>nickm@stanford.edu\\
+%\>{Balaji Prabhakar}\>:\>balaji@stanford.edu\\
+%\>{Ajit Shelat}\>:\>ajit\_shelat@pmc-sierra.com\\
+%\>{S.S.S.P. Rao}\>:\>ssspr@cse.iitb.ernet.in\\
+%\end{tabbing}
+%\newpage
+
+\end{footnotesize}
+\end{small}
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
